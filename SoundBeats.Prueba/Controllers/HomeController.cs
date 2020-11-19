@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SoundBeats.Web.Models;
+using SoundBeats.Prueba.Models;
 
-namespace SoundBeats.Web.Controllers
+namespace SoundBeats.Prueba.Controllers
 {
     public class HomeController : Controller
     {
@@ -24,11 +24,6 @@ namespace SoundBeats.Web.Controllers
         }
 
         public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        public IActionResult AboutMe()
         {
             return View();
         }

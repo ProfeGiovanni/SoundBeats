@@ -1,0 +1,43 @@
+﻿@model SoundBeats.Core.Domain.Country
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Country</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NameEn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NameEn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NameEs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NameEs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ISO2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ISO2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ISO3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ISO3)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
